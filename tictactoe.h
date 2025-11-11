@@ -13,6 +13,7 @@ typedef struct{
 	cell_t board[BOARD_SIZE];
 	cell_t turn;
 	int game_over;
+	cell_t winner;
 }ttt_game_t;
 
 #endif
