@@ -2,7 +2,7 @@
 In-Kernel Tic-Tac-Tac Game Character Device Driver
 
 
-This is a character device driver that runs a Tic Tac Toe game engine inside theLinux Kernel.I wrote this to demonstrate how to handle system calls, manage kernel memory, and use synchronization primitives like spinlocks to prevent race conditions.
+This is a character device driver that runs a Tic Tac Toe game engine inside the Linux Kernel.I wrote this to demonstrate how to handle system calls, manage kernel memory, and use synchronization primitives like spinlocks to prevent race conditions.
 
 Technical Overview
 
