@@ -1,10 +1,10 @@
  
-In-Kernel Tic-Tac-Tac Game Character Device Driver
+# In-Kernel Tic-Tac-Tac Game Character Device Driver
 
 
 This is a character device driver that runs a Tic Tac Toe game engine inside the Linux Kernel.I wrote this to demonstrate how to handle system calls, manage kernel memory, and use synchronization primitives like spinlocks to prevent race conditions.
 
-Technical Overview
+# Technical Overview
 
 The project is split into three main parts.
 
@@ -14,7 +14,7 @@ Second, the tictactoe.h header defines the game structure.I included a spinlock 
 
 Third,test_user.c is a C application that provides a terminal interface for the game. It opens the device node, reads the current board state, and writes player moves back to the kernel.
 
-How to Build and Run
+# How to Build and Run
 
 To compile the module and the test application, run make in the terminal.
 
@@ -22,7 +22,7 @@ To load the driver, use sudo insmod tictactoe.ko. You will need to check dmesg t
 
 After the device is set up, compile the user app with gcc test_user.c ttt and run it to play game.
 
-Environment
+# Environment
 
 I developed and tested this code on an Ubuntu system.It is designed to be portable across different architectures since it uses standard Linux Kernel APIs.
 
